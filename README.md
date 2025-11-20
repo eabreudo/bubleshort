@@ -1,4 +1,4 @@
-# bublesort
+# bubblesort
 program main
 
 
