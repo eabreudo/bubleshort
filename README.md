@@ -1,5 +1,9 @@
 # bubblesort
 program main
+for i
+do
+
+done
 
 
-hello
+end main 
