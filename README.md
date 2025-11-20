@@ -3,6 +3,7 @@ program main
 
 implicit none
 
+! Declare the variables
     real :: a(5)
     integer :: i, j
     real :: temp
@@ -15,9 +16,24 @@ implicit none
     print *, 'Original array:'
     print *, a
 
-! Declare the variables
+! Bubblesort 
+do i = 1, 5 - 1
+    do j = 1, 5 - i
+        if (a(j) > a(j+1)) then
+            temp   = a(j)
+            a(j)   = a(j+1)
+            a(j+1) = temp
+        end if
+    end do
+end do
 
-integer :: i,j
+print *, 'Sorted array:'
+    print *, a
+
+
+
+
+
 
 for i
 do
