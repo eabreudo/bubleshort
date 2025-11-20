@@ -5,8 +5,10 @@ implicit none
 
 ! Declare the variables
     real :: a(5)
-    integer :: i, j
+    integer :: i, j, swap_count
     real :: temp
+    
+
 
 ! Fill array with random numbers
     call random_seed()      ! initialize RNG (processor dependent)
@@ -16,6 +18,10 @@ implicit none
     print *, 'Original array:'
     print *, a
 
+swap_count = 0
+
+
+
 ! Bubblesort 
 do i = 1, 5 - 1
     do j = 1, 5 - i
@@ -23,10 +29,13 @@ do i = 1, 5 - 1
             temp   = a(j)
             a(j)   = a(j+1)
             a(j+1) = temp
+            swap_count = swap_count + 1   ! count each swap
         end if
     end do
 end do
 
 print *, 'Sorted array:'
-    print *, a
+print *, a
+print *, 'Total swaps =', swap_count
+
 end program main 
