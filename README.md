@@ -3,7 +3,9 @@ program main
 
 implicit none
 
-integer :: n
+! Declare the variables
+
+integer :: i,j
 
 for i
 do
