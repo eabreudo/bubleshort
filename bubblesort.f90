@@ -1,4 +1,4 @@
-# bubblesort
+! bubblesort
 program main
 
 implicit none
@@ -29,4 +29,4 @@ end do
 
 print *, 'Sorted array:'
     print *, a
-end main 
+end program main 
