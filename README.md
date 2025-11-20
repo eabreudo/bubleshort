@@ -29,17 +29,4 @@ end do
 
 print *, 'Sorted array:'
     print *, a
-
-
-
-
-
-
-for i
-do
-
-
-enddo
-
-
 end main 
