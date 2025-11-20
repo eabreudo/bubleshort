@@ -3,12 +3,13 @@ program main
 
 implicit none
 
-integer :: 
+integer :: n
+
 for i
 do
 
 
-done
+enddo
 
 
 end main 
